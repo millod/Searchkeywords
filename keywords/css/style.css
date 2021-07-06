@@ -1,4 +1,19 @@
 *{font-weight: 500;}
+@font-face {
+    font-family: "BYekan";
+    src: url("/font/BYekan.eot");
+    src: url("/font/BYekan.eot?#iefix") format("embedded-opentype"),
+      url("/font/BYekan.svg#BYekan") format("svg"),
+      url("/font/BYekan.ttf") format("truetype"),
+      url("/font/BYekan.woff") format("woff"),
+      url("/font/BYekan.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  * {
+    font-family: "BYekan", arial, "sans-serif";
+  }
 .keywordItem{
     border: 1px solid rgb(186, 213, 218);
     cursor: pointer;
