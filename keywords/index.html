@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/key.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainPanel p-3 border border-1 border-info m-3 rounded shadow-sm">
+            <div id="mailPlace_titleBoxControl_lblTitr" class="border border-1 border-muted rounded p-3 text-center bg-light text-muted">[012]....</div>
+        <div class="inmanageHolder" id="keywordPlace" searchkeyurl="/ajax/keywordsearch" addkeyurl="/ajax/keywordAdd">
+        <div class="inmageBase border border-1 border-muted p-3 m-2 rounded shadow">
+        <div class="selKeysHead p-3 text-muted">کلید واژه های انتخاب شده</div>
+        <div class="selectedkeywords row pb-3">
+            <div class="keywordItem col-lg-2 col-md-2 col-sm-3 text-center p-2 rounded m-1 text-secondary shadow-sm" keyid="5522">"لورم"</div>
+            <div class="keywordItem col-lg-2 col-md-2 col-sm-3 text-center p-2 rounded m-1 text-secondary shadow-sm" keyid="12222">لورم ایپسوم</div>
+            <div class="keywordItem col-lg-2 col-md-2 col-sm-3 text-center p-2 rounded m-1 text-secondary shadow-sm" keyid="6624">لورم ایپسوم</div>
+            <div class="keywordItem col-lg-2 col-md-2 col-sm-3 text-center p-2 rounded m-1 text-secondary shadow-sm" keyid="6662">لورم ایپسوم</div>
+        </div>
+        <div class="KeywordSavePanel p-3">
+            <input type="button" name="ctl00$mainPlace$btnSaveKeyword" value="ذخیره" onclick="javascript:__doPostBack('ctl00$mainPlace$btnSaveKeyword','')" id="mainPlace_btnSaveKeyword" class="btn btn-success">
+            <input type="hidden" name="ctl00$mainPlace$keywordIdsVal" id="keywordIdsVal" value="6627,46547,10125,44963,46548,10618,46586,">
+        </div>
+        <div id="keywordSearchPanel" class="border border-danger p-4 m-3 rounded bg-light text-muted shadow">
+            <div id="keywordSearchBox" class="p-3 rounded border border-muted shadow-sm">
+                انتخاب کلید واژه :
+                <input type="text" id="txtKeywordSearch" class="input-group-sm rounded" required>
+                <input type="button" id="btnKeywordSearch" class="btn btn-outline-danger" value="جستجو">
+                <input type="button" id="btnKeywordSearchAll" class="btn btn-outline-info" value="جستجو در همه" >
+                <input type="button" id="btnNewKeySave" class="btn btn-outline-success" value="افزودن">
+            </div>
+            <div id="searchedkeywords"></div>
+            <br clear="both">
+        </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
