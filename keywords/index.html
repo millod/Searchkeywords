@@ -16,9 +16,10 @@
         <div class="inmanageHolder" id="keywordPlace" searchkeyurl="/ajax/keywordsearch" addkeyurl="/ajax/keywordAdd">
         <div class="inmageBase border border-1 border-muted p-3 m-2 rounded shadow">
         <div class="selKeysHead p-3 text-muted">کلید واژه های انتخاب شده</div>
-        <div class="selectedkeywords row pb-3">
+        <div class="selectedkeywords row pb-3 justify-content-center">
             <div class="keywordItem col-lg-2 col-md-2 col-sm-3 text-center p-2 rounded m-1 text-secondary shadow-sm" keyid="5522">"لورم"</div>
             <div class="keywordItem col-lg-2 col-md-2 col-sm-3 text-center p-2 rounded m-1 text-secondary shadow-sm" keyid="12222">لورم ایپسوم</div>
+            <div class="keywordItem col-lg-2 col-md-2 col-sm-3 text-center p-2 rounded m-1 text-secondary shadow-sm" keyid="6624">لورم ایپسوم</div>
             <div class="keywordItem col-lg-2 col-md-2 col-sm-3 text-center p-2 rounded m-1 text-secondary shadow-sm" keyid="6624">لورم ایپسوم</div>
             <div class="keywordItem col-lg-2 col-md-2 col-sm-3 text-center p-2 rounded m-1 text-secondary shadow-sm" keyid="6662">لورم ایپسوم</div>
         </div>
@@ -29,12 +30,12 @@
         <div id="keywordSearchPanel" class="border border-danger p-4 m-3 rounded bg-light text-muted shadow">
             <div id="keywordSearchBox" class="p-3 rounded border border-muted shadow-sm">
                 انتخاب کلید واژه :
-                <input type="text" id="txtKeywordSearch" class="input-group-sm rounded" required>
+                <input type="text" id="txtKeywordSearch" class="input-group-sm rounded">
                 <input type="button" id="btnKeywordSearch" class="btn btn-outline-danger" value="جستجو">
                 <input type="button" id="btnKeywordSearchAll" class="btn btn-outline-info" value="جستجو در همه" >
                 <input type="button" id="btnNewKeySave" class="btn btn-outline-success" value="افزودن">
             </div>
-            <div id="searchedkeywords"></div>
+            <div id="searchedkeywords" class="border border-warning p-3 rounded mt-3"></div>
             <br clear="both">
         </div>
         </div>
