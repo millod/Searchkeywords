@@ -11,31 +11,31 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="mainPanel p-3 border border-1 border-secondary m-3 rounded shadow">
-            <div id="mailPlace_titleBoxControl_lblTitr" class="border border-1 border-muted rounded p-3 text-center bg-light text-muted">[012]....</div>
+    <div class="p-3 m-3 border rounded shadow mainPanel border-1 border-secondary">
+            <div id="mailPlace_titleBoxControl_lblTitr" class="p-3 text-center border rounded border-1 border-muted bg-light text-muted">[012]....</div>
         <div class="inmanageHolder" id="keywordPlace" searchkeyurl="/ajax/keywordsearch" addkeyurl="/ajax/keywordAdd">
-        <div class="inmageBase border border-1 border-muted p-3 m-2 rounded shadow">
-        <div class="selKeysHead p-3 text-muted">کلید واژه های انتخاب شده</div>
-        <div class="selectedkeywords row pb-3 justify-content-center">
-            <div class="keywordItem col-lg-2 col-md-2 col-sm-3 text-center p-2 rounded m-1 text-secondary shadow-sm" keyid="5522">"لورم"</div>
-            <div class="keywordItem col-lg-2 col-md-2 col-sm-3 text-center p-2 rounded m-1 text-secondary shadow-sm" keyid="12222">لورم ایپسوم</div>
-            <div class="keywordItem col-lg-2 col-md-2 col-sm-3 text-center p-2 rounded m-1 text-secondary shadow-sm" keyid="6624">لورم ایپسوم</div>
-            <div class="keywordItem col-lg-2 col-md-2 col-sm-3 text-center p-2 rounded m-1 text-secondary shadow-sm" keyid="6624">لورم ایپسوم</div>
-            <div class="keywordItem col-lg-2 col-md-2 col-sm-3 text-center p-2 rounded m-1 text-secondary shadow-sm" keyid="6662">لورم ایپسوم</div>
+        <div class="p-3 m-2 border rounded shadow inmageBase border-1 border-muted">
+        <div class="p-3 selKeysHead text-muted">کلید واژه های انتخاب شده</div>
+        <div class="pb-3 selectedkeywords row justify-content-center">
+            <div class="p-2 m-1 text-center rounded shadow-sm keywordItem col-lg-2 col-md-2 col-sm-3 text-secondary" keyid="5522">"لورم"</div>
+            <div class="p-2 m-1 text-center rounded shadow-sm keywordItem col-lg-2 col-md-2 col-sm-3 text-secondary" keyid="12222">لورم ایپسوم</div>
+            <div class="p-2 m-1 text-center rounded shadow-sm keywordItem col-lg-2 col-md-2 col-sm-3 text-secondary" keyid="6624">لورم ایپسوم</div>
+            <div class="p-2 m-1 text-center rounded shadow-sm keywordItem col-lg-2 col-md-2 col-sm-3 text-secondary" keyid="6624">لورم ایپسوم</div>
+            <div class="p-2 m-1 text-center rounded shadow-sm keywordItem col-lg-2 col-md-2 col-sm-3 text-secondary" keyid="6662">لورم ایپسوم</div>
         </div>
-        <div class="KeywordSavePanel p-3">
-            <input type="button" name="ctl00$mainPlace$btnSaveKeyword" value="ذخیره" onclick="javascript:__doPostBack('ctl00$mainPlace$btnSaveKeyword','')" id="mainPlace_btnSaveKeyword" class="btn btn-success">
+        <div class="p-3 KeywordSavePanel">
+            <input type="button" name="ctl00$mainPlace$btnSaveKeyword" value="ذخیره" onclick="javascript:__doPostBack('ctl00$mainPlace$btnSaveKeyword','')" id="mainPlace_btnSaveKeyword" class="m-3 btn btn-sm btn-success">
             <input type="hidden" name="ctl00$mainPlace$keywordIdsVal" id="keywordIdsVal" value="6627,46547,10125,44963,46548,10618,46586,">
         </div>
-        <div id="keywordSearchPanel" class="border border-muted p-4 m-3 rounded bg-light text-muted shadow">
-            <div id="keywordSearchBox" class="p-3 rounded border border-muted shadow-sm">
+        <div id="keywordSearchPanel" class="p-4 m-3 border rounded shadow border-muted bg-light text-muted">
+            <div id="keywordSearchBox" class="p-3 border rounded shadow-sm border-muted">
                 انتخاب کلید واژه :
-                <input type="text" id="txtKeywordSearch" class="input-group-sm rounded">
-                <input type="button" id="btnKeywordSearch" class="btn btn-outline-danger" value="جستجو">
-                <input type="button" id="btnKeywordSearchAll" class="btn btn-warning" value="جستجو در همه" >
-                <input type="button" id="btnNewKeySave" class="btn btn-outline-success" value="افزودن">
+                <input type="text" id="txtKeywordSearch" class="rounded input-group-sm">
+                <input type="button" id="btnKeywordSearch" class="btn btn-sm btn-outline-danger" value="جستجو">
+                <input type="button" id="btnKeywordSearchAll" class="btn btn-sm btn-warning" value="جستجو در همه" >
+                <input type="button" id="btnNewKeySave" class="btn btn-sm btn-outline-success" value="افزودن">
             </div>
-            <div id="searchedkeywords" class="border border-warning p-3 rounded mt-3"></div>
+            <div id="searchedkeywords" class="p-3 mt-3 border rounded border-warning"></div>
             <br clear="both">
         </div>
         </div>
